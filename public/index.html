@@ -25,9 +25,24 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <!-- test nav to mimic nav on website -->
+    <style>
+      .test-nav {
+        height: 54px;
+        width: 100vw;
+        background: pink;
+      }
+
+      @media screen and (min-width: 768px) {
+        .test-nav {
+          height: 77px;
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <nav class="test-nav"></nav>
     <div id="root"></div>
     <!--
       This HTML file is a template.
